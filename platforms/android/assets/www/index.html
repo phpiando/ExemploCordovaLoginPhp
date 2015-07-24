@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css" />
+  <script src="cordova.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+$(function(){
+    Index.init();
+});
+</script>
+  <div id="login" data-role="page">   
+    <br><br>
+    <div align="center"> <strong>Tela de Login </strong></div>
+    <br><br>
+    <form id="formLogin">
+      <label>Usuario</label>
+      <input id="usuario" name="usuario" type="text" placeholder="meu usuario" />
+
+      <label>Senha</label>
+      <input id="senha" name="senha" type="password" placeholder="minha senha" />
+
+      <br>
+      <button type="submit" data-theme="b">Acessar</button>
+    </form>  
+  </div>
+
+  <div id="index" data-role="page">   
+    Você conectou com sucesso!
+  </div>
+
+</body>
+</html>
